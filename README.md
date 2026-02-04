@@ -55,3 +55,40 @@ The platform monitors Kubernetes clusters and automatically responds to incident
    - Logs events to backend
 6. **Verification**: n8n confirms issue resolution
 7. **Reporting**: Event history accessible via backend API
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally using Docker Compose:
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/rayenklai-b/Cluster-Monitoring-with-Alerts-and-Automated-Workflows.git
+cd Cluster-Monitoring-with-Alerts-and-Automated-Workflows
+```
+
+2. **Create or update the environment file**
+   Make sure your `.env` or `.env.docker` contains the correct database credentials and other variables. You can use `.env.example` as a template:
+
+```bash
+cp .env.example .env.docker
+```
+
+3. **Build and start all services**
+
+```bash
+docker-compose up --build
+```
+
+This will start:
+
+* PostgreSQL database (`postgres`)
+* Spring Boot backend (`app`)
+
+4. **Access the backend API documentation**
+   Once the backend is running, you can test the API using Swagger:
+   [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+
+---
+
