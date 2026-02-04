@@ -1,4 +1,4 @@
-# Monitoring Dashboard
+# Cluster Monitoring with Alerts and Automated Workflows
 
 > Cloud-native DevOps monitoring and automation platform for Kubernetes applications
 
