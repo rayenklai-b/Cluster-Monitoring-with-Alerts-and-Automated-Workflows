@@ -1,4 +1,4 @@
-# 🔐 Monitoring Dashboard
+# Monitoring Dashboard
 
 > Cloud-native DevOps monitoring and automation platform for Kubernetes applications
 
@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ---
 
-## 📖 About
+## About
 
 Monitoring Dashboard is a DevOps monitoring and automation platform designed for Kubernetes environments. It combines metrics collection, visualization, and automated remediation workflows.
 
@@ -24,7 +24,7 @@ The platform monitors Kubernetes clusters and automatically responds to incident
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 | Component | Technology | Version |
 |-----------|-------------|---------|
@@ -40,7 +40,7 @@ The platform monitors Kubernetes clusters and automatically responds to incident
 
 ---
 
-## 📊 Monitoring Architecture
+## Monitoring Architecture
 
 ### Automation Flow
 
@@ -55,73 +55,3 @@ The platform monitors Kubernetes clusters and automatically responds to incident
    - Logs events to backend
 6. **Verification**: n8n confirms issue resolution
 7. **Reporting**: Event history accessible via backend API
-
----
-
-## 🎯 Monitored Services
-
-### Platform Services
-
-Internal components deployed in the Kubernetes cluster:
-
-**Backend (Spring Boot)**
-- Pod availability
-- API response times
-- HTTP errors (500, 403, etc.)
-- CPU/RAM consumption
-
-**Frontend (Angular)**
-- Web service availability
-- UI access latency
-- Network errors and downtime
-
-**PostgreSQL Database**
-- Database pod status
-- Active connections
-- Query performance
-- Disk space usage
-
-**n8n Automation Engine**
-- Instance availability
-- Failed workflows
-- Trigger execution
-- Execution queue status
-
-**Prometheus**
-- Metrics collection status
-- Scraping errors
-
-**Grafana**
-- Dashboard accessibility
-- Alerting functionality
-
-### Kubernetes Resources
-
-Cluster-level monitoring:
-
-**Pods**
-- Running / CrashLoopBackOff states
-- Frequent restarts
-- NotReady pods
-
-**Services**
-- Service downtime
-- Missing endpoints
-
-**Nodes**
-- Node failures
-- CPU/memory overload
-- Resource shortage
-
-**Deployments**
-- Available replicas count
-- Scaling operations
-
-### External Integrations
-
-n8n can send notifications and create tickets via:
-- Slack
-- Email (SMTP)
-- Discord / Microsoft Teams
-- Custom webhooks
-- Jira (incident ticket creation)
