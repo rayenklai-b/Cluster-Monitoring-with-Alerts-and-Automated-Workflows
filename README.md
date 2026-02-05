@@ -19,7 +19,8 @@ This project integrates three main components:
 - **Prometheus**: Collects cluster metrics (CPU, memory, pod status, latency, errors)
 - **Grafana**: Provides dashboards and alert configuration
 - **n8n**: Executes automated workflows triggered by alerts
-
+- **Angular Dashboard**: Central portal for monitoring, incident management, and workflow control
+- 
 The platform monitors Kubernetes clusters and automatically responds to incidents through configurable workflows (notifications, pod restarts, scaling, log analysis).
 
 ---
@@ -29,7 +30,7 @@ The platform monitors Kubernetes clusters and automatically responds to incident
 | Component | Technology | Version |
 |-----------|-------------|---------|
 | **Backend** | Spring Boot | 3.4.3 |
-| **Language** | Java | 21 |
+| **Frontend** | Angular | 18 |
 | **Database** | PostgreSQL | 15 |
 | **Security** | Spring Security + JWT | 6.x |
 | **API Documentation** | Swagger/OpenAPI | 2.3.0 |
@@ -54,7 +55,7 @@ The platform monitors Kubernetes clusters and automatically responds to incident
    - Executes remediation actions (restart, scale, escalate)
    - Logs events to backend
 6. **Verification**: n8n confirms issue resolution
-7. **Reporting**: Event history accessible via backend API
+7. **Reporting**: Event history accessible via backend API and Angular dashboard
 ---
 
 ## 🚀 Getting Started
