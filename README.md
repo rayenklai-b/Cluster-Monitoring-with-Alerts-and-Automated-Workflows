@@ -20,7 +20,7 @@ This project integrates three main components:
 - **Grafana**: Provides dashboards and alert configuration
 - **n8n**: Executes automated workflows triggered by alerts
 - **Angular Dashboard**: Central portal for monitoring, incident management, and workflow control
-- 
+  
 The platform monitors Kubernetes clusters and automatically responds to incidents through configurable workflows (notifications, pod restarts, scaling, log analysis).
 
 ---
